@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Log In{% endblock %}</h1>
+<div class="bjimg"></div>
+{% endblock %}
+{% block content %}
+  <form method="post">
+    <label for="username">Username</label>
+    <input class="form-control" name="username" id="username" required>
+    <label for="password">Password</label>
+    <input class="form-control" type="password" name="password" id="password" required>
+    <input class="btn btn-primary btn-lg" type="submit" value="Log In">
+  </form>
+{% endblock %}
+</body>
